@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031251505549",
+    "project_id": "study-group-chat-room-2021",
+    "storage_bucket": "study-group-chat-room-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031251505549:android:862b483bc1daa2b3e28dc4",
+        "android_client_info": {
+          "package_name": "com.example.ikuzo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031251505549-2v87e23ts7grvi4h2jj39ppsdbc5i4oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLVBMVBb5mJ_mStLw0WoDIOC4Fmee8Hqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031251505549-2v87e23ts7grvi4h2jj39ppsdbc5i4oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
