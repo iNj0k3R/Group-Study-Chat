@@ -71,7 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
                             assert firebaseUser != null;
                             String userid = firebaseUser.getUid();
 
-                            reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
+                            reference = FirebaseDatabase.getInstance("https://study-group-chat-room-2021-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users").child(userid);
 
                             HashMap<String,String> hashMap = new HashMap<>();
                             hashMap.put("id",userid);
