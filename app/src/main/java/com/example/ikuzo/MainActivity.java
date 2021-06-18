@@ -8,9 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.ikuzo.models.User;
@@ -46,12 +49,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter subjectadapter = new ArrayAdapter<String>(this,
-                R.layout.activity_listview, mobileArray);
-
-        ListView listView = (ListView) findViewById(R.id.mobile_list);
-        listView.setAdapter(subjectadapter);
-
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -81,6 +78,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull @NotNull DatabaseError error) {
 
+            }
+        });
+        ArrayAdapter subjectadapter = new ArrayAdapter<>(this,
+                R.layout.activity_listview, mobileArray);
+
+        ListView listView = findViewById(R.id.mobile_list);
+        listView.setAdapter(subjectadapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String selectedItem = (String) parent.getItemAtPosition(position);
+                Intent intent = new Intent(MainActivity.this, UnitsActivity.class);
+                intent.putExtra("subname", selectedItem);
+                startActivity(intent);
             }
         });
 
