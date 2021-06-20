@@ -50,7 +50,9 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     public void onBindViewHolder(@NonNull @NotNull MessageAdapter.ViewHolder holder, int position) {
         Chat chat = mChat.get(position);
 
+        holder.sender_name.setText(chat.getSenderName());
         holder.show_message.setText(chat.getMessage());
+
 
     }
 
@@ -62,11 +64,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView show_message;
+        public TextView sender_name;
 
         public ViewHolder(View itemView){
             super(itemView);
 
+            sender_name = itemView.findViewById(R.id.sender_name);
             show_message = itemView.findViewById(R.id.show_message);
+
         }
     }
 

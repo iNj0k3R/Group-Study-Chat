@@ -76,14 +76,14 @@ public class MessageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String msg = txt_send.getText().toString();
                 if(!msg.equals("")){
-                    sendMessage(user.getUid(),msg,fPath);
+                    sendMessage(user.getUid(),msg,user.getDisplayName(),fPath);
                 }else {
                     Toast.makeText(MessageActivity.this, "You can't send empty message", Toast.LENGTH_SHORT).show();
                 }
                 txt_send.setText("");
             }
         });
-        reference = FirebaseDatabase.getInstance("https://study-group-chat-room-2021-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference(fPath);
+        reference = FirebaseDatabase.getInstance("https://study-group-chat-room-2021-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference();
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -100,11 +100,12 @@ public class MessageActivity extends AppCompatActivity {
 
 
     }
-    private void sendMessage(String sender, String message, String fPath){
+    private void sendMessage(String sender, String message, String senderName, String fPath){
         reference = FirebaseDatabase.getInstance("https://study-group-chat-room-2021-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference();
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("sender",sender);
         hashMap.put("message",message);
+        hashMap.put("senderName",senderName);
         reference.child(fPath).push().setValue(hashMap);
     }
 

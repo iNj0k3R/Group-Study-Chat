@@ -36,7 +36,7 @@
         android:layout_height="match_parent"
         android:id="@+id/recycler_view"
         android:layout_below="@id/bar_layout"
-        android:layout_above="@+id/sender"/>
+        android:layout_above="@+id/senderbox"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:background="#fff"
         android:padding="5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/sender">
+        android:id="@+id/senderbox">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
