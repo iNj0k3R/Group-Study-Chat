@@ -53,7 +53,6 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         holder.sender_name.setText(chat.getSenderName());
         holder.show_message.setText(chat.getMessage());
 
-
     }
 
     @Override
