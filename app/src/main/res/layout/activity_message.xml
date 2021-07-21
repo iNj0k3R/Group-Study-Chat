@@ -45,6 +45,12 @@
         android:padding="5dp"
         android:layout_height="wrap_content"
         android:id="@+id/senderbox">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/camera_button"
+            android:id="@+id/btn_cam"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,6 +58,7 @@
             android:background="@android:color/transparent"
             android:hint="Type a message..."
             android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_cam"
             android:layout_centerVertical="true"
             />
         <ImageButton

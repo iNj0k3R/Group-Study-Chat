@@ -5,10 +5,19 @@ public class Chat {
     private String message;
     private String senderName;
 
+    private String imageUrl;
+
     public Chat(String sender, String message, String senderName) {
         this.sender = sender;
         this.message = message;
         this.senderName = senderName;
+        this.imageUrl = null;
+    }
+    public Chat(String sender, String message, String senderName, String imageUrl) {
+        this.sender = sender;
+        this.message = message;
+        this.senderName = senderName;
+        this.imageUrl = imageUrl;
     }
     public Chat(){
 
@@ -37,4 +46,8 @@ public class Chat {
     public void setSenderName(String senderName) {
         this.senderName = senderName;
     }
+
+    public String getImageUrl() { return imageUrl; }
+
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }

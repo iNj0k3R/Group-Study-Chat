@@ -24,8 +24,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\varad\AppData\Local\Temp\baseline_arrow_back_ios_24.xml" />
-                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="imagePath" value="C:\Users\varad\AppData\Local\Temp\baseline_camera_alt_24.xml" />
+                                                <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -36,7 +36,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back_ios/baseline_arrow_back_ios_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/camera_alt/baseline_camera_alt_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -68,8 +68,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="back_button" />
-                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="outputName" value="camera_button" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
