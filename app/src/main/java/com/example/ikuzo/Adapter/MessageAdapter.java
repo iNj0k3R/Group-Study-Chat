@@ -1,7 +1,6 @@
 package com.example.ikuzo.Adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.ikuzo.MessageActivity;
 import com.example.ikuzo.R;
 import com.example.ikuzo.models.Chat;
 import com.google.firebase.auth.FirebaseAuth;
